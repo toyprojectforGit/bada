@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 
+import com.example.bada1.activity.MapActivity;
 import com.example.bada1.databinding.ActivityProjectActivtyBinding;
 
 public class ProjectActivty extends AppCompatActivity implements View.OnClickListener {

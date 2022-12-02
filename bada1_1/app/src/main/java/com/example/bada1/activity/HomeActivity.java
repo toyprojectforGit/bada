@@ -1,4 +1,4 @@
-package com.example.bada1;
+package com.example.bada1.activity;
 
 import android.os.Bundle;
 import android.util.Log;
@@ -8,6 +8,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.bada1.recyclerview.CustomAdapter;
+import com.example.bada1.R;
+import com.example.bada1.modelClass.User;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;

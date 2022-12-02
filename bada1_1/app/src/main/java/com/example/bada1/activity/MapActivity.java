@@ -1,4 +1,4 @@
-package com.example.bada1;
+package com.example.bada1.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,6 +6,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+
+import com.example.bada1.R;
+import com.example.bada1.modelClass.User;
 
 public class MapActivity extends AppCompatActivity {
 
@@ -36,7 +39,7 @@ public class MapActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 sail.setLocation("서울");
-                Intent s=new Intent(MapActivity.this,NoticeBoardActivity.class);
+                Intent s=new Intent(MapActivity.this, NoticeBoardActivity.class);
                 startActivity(s);
 
             }

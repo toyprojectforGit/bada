@@ -4,8 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".RegisterActivity">
-
+    tools:context=".activity.RegisterActivity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="회원가입"
+        android:layout_marginTop="13dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
     <EditText
         android:id="@+id/et_email"
         android:layout_width="wrap_content"
@@ -17,12 +28,14 @@
         app:layout_constraintBottom_toTopOf="@+id/et_pwd"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints"
+        android:backgroundTint="#DBDBDB"
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginTop="200dp"
         />
 
     <EditText
         android:id="@+id/et_pwd"
+        android:backgroundTint="#DBDBDB"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -39,8 +52,9 @@
         android:id="@+id/et_location"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:backgroundTint="#DBDBDB"
         android:ems="10"
-        android:text="선호지역을 선택하세요"
+        android:hint="선호지역을 선택하세요"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints"
@@ -53,6 +67,7 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="희망 주제를 입력하세요"
+        android:backgroundTint="#DBDBDB"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints"

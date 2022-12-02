@@ -1,4 +1,4 @@
-package com.example.bada1;
+package com.example.bada1.modelClass;
 
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.database.DatabaseReference;

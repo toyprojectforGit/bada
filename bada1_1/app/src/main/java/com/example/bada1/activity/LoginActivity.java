@@ -1,4 +1,5 @@
-package com.example.bada1;
+package com.example.bada1.activity;
+
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -11,6 +12,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.example.bada1.R;
+import com.example.bada1.util.UserPrivateData;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
@@ -37,7 +40,7 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View view)
             {
-                //회원가입 화면으로 이동 ,엑티비티 이동할때 intent 사용
+                //회원가입 화면으로 이동 ,엑티비티 이동할때 intent 사용용
                 Intent intent = new Intent(LoginActivity.this, RegisterActivity.class);
                 startActivity(intent);
             }
@@ -73,8 +76,8 @@ public class LoginActivity extends AppCompatActivity {
                             Toast.makeText(LoginActivity.this, "로그인 성공",
                                     Toast.LENGTH_SHORT).show();
 
-
-                            Intent d = new Intent(getApplicationContext(), HomeActivity.class);
+                            UserPrivateData.USERID = email;
+                            Intent d = new Intent(getApplicationContext(), MainActivity.class);
                             startActivity(d);
                         }
 

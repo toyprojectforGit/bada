@@ -1,4 +1,4 @@
-package com.example.bada1;
+package com.example.bada1.modelClass;
 
 public class RecruitNotice {
     private String proj;
