@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RecruitActivity">
+    <TextView
+        android:id="@+id/tv_web_t"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="웹 컨텐츠(:명)"
+        tools:layout_editor_absoluteX="120dp"
+        tools:layout_editor_absoluteY="467dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv_guit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="디자이너(:명)"
+        tools:layout_editor_absoluteX="120dp"
+        tools:layout_editor_absoluteY="521dp"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/et_serv"
+        android:layout_width="50dp"
+        android:layout_height="35dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        tools:layout_editor_absoluteX="193dp"
+        tools:layout_editor_absoluteY="289dp"
+        tools:ignore="MissingConstraints" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="203dp"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/et_setprj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="주제(웹개발/ 앱개발)"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="97dp"
+        tools:layout_editor_absoluteY="154dp"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/et_setloca"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="지역(도 단위 입력)"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="97dp"
+        tools:layout_editor_absoluteY="203dp"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/et_andr"
+        android:layout_width="50dp"
+        android:layout_height="35dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        tools:layout_editor_absoluteX="220dp"
+        tools:layout_editor_absoluteY="340dp"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/et_web"
+        android:layout_width="50dp"
+        android:layout_height="35dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        tools:layout_editor_absoluteX="202dp"
+        tools:layout_editor_absoluteY="451dp"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/et_gui"
+        android:layout_width="50dp"
+        android:layout_height="35dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        tools:layout_editor_absoluteX="202dp"
+        tools:layout_editor_absoluteY="505dp"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/et_ios"
+        android:layout_width="50dp"
+        android:layout_height="35dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        tools:layout_editor_absoluteX="213dp"
+        tools:layout_editor_absoluteY="395dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv_servt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="서버개발자(:명)"
+        tools:layout_editor_absoluteX="102dp"
+        tools:layout_editor_absoluteY="305dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv_andrt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="안드로이드개발자(:명)"
+        tools:layout_editor_absoluteX="90dp"
+        tools:layout_editor_absoluteY="356dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv_iost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ios app개발자(:명)"
+        tools:layout_editor_absoluteX="102dp"
+        tools:layout_editor_absoluteY="411dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btn_post"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="게시"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
