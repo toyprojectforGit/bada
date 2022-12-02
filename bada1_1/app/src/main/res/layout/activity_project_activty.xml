@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProjectActivty">
+
+    <TextView
+        android:id="@+id/choice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="원하는 프로젝트를 선택하세요"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:textSize="15sp"/>
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/project_complte_btn"
+        app:layout_constraintTop_toBottomOf="@+id/choice">
+
+        <TextView
+            android:id="@+id/wholeproject"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="완전한 프로젝트"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginLeft="15dp"/>
+
+        <TextView
+            android:id="@+id/wp_task"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="서버/디자이너/앱"
+            app:layout_constraintTop_toBottomOf="@+id/wholeproject"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginLeft="15dp"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#EDEDED"
+        app:layout_constraintTop_toBottomOf="@+id/project_complte_btn"
+        android:layout_marginTop="10dp"
+        />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/project_app_btn"
+        app:layout_constraintTop_toBottomOf="@+id/line1">
+
+        <TextView
+            android:id="@+id/app_project"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="앱 프로젝트(Android)"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginLeft="15dp"/>
+
+        <TextView
+            android:id="@+id/app_task"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Android 개발자"
+            app:layout_constraintTop_toBottomOf="@+id/app_project"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginLeft="15dp"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:id="@+id/line2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#EDEDED"
+        app:layout_constraintTop_toBottomOf="@+id/project_app_btn"
+        android:layout_marginTop="10dp"
+        />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/project_iapp_btn"
+        app:layout_constraintTop_toBottomOf="@+id/line2">
+
+        <TextView
+            android:id="@+id/iapp_project"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="앱 프로젝트(iOS)"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginLeft="15dp"/>
+
+        <TextView
+            android:id="@+id/iapp_task"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="iOS 개발자"
+            app:layout_constraintTop_toBottomOf="@+id/iapp_project"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginLeft="15dp"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:id="@+id/line3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#EDEDED"
+        app:layout_constraintTop_toBottomOf="@+id/project_iapp_btn"
+        android:layout_marginTop="10dp"
+        />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/project_web_btn"
+        app:layout_constraintTop_toBottomOf="@+id/line3">
+
+        <TextView
+            android:id="@+id/web_project"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="웹 프로젝트(Web)"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginLeft="15dp"/>
+
+        <TextView
+            android:id="@+id/web_task"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="웹 개발자"
+            app:layout_constraintTop_toBottomOf="@+id/web_project"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginLeft="15dp"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:id="@+id/line4"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#EDEDED"
+        app:layout_constraintTop_toBottomOf="@+id/project_web_btn"
+        android:layout_marginTop="10dp"
+        />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/project_server_btn"
+        app:layout_constraintTop_toBottomOf="@+id/line4">
+
+        <TextView
+            android:id="@+id/server_project"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="서버 프로젝트(Server)"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginLeft="15dp"/>
+
+        <TextView
+            android:id="@+id/server_task"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="서버 개발자"
+            app:layout_constraintTop_toBottomOf="@+id/server_project"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginLeft="15dp"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:id="@+id/line5"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#EDEDED"
+        app:layout_constraintTop_toBottomOf="@+id/project_server_btn"
+        android:layout_marginTop="10dp"
+        />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/project_design_btn"
+        app:layout_constraintTop_toBottomOf="@+id/line5">
+
+        <TextView
+            android:id="@+id/design_project"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="디자인 프로젝트(design)"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginLeft="15dp"/>
+
+        <TextView
+            android:id="@+id/design_task"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="디자이너"
+            app:layout_constraintTop_toBottomOf="@+id/design_project"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginLeft="15dp"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:id="@+id/line6"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#EDEDED"
+        app:layout_constraintTop_toBottomOf="@+id/project_design_btn"
+        android:layout_marginTop="10dp"
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
