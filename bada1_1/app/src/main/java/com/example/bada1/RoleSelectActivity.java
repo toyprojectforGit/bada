@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.bada1.modelClass.User;
+
 public class RoleSelectActivity extends AppCompatActivity {
 Button btn_cap;
 Button btn_sail;

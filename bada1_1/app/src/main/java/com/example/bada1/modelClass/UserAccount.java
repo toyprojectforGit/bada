@@ -1,4 +1,4 @@
-package com.example.bada1;
+package com.example.bada1.modelClass;
 /*
 사용자 계정 정보 모델 클래스, 닉네임도 추후 저장해야함
  */

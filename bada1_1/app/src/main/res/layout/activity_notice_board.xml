@@ -4,12 +4,30 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".NoticeBoardActivity">
-
+    tools:context=".activity.NoticeBoardActivity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="프로젝트 목록"
+        android:layout_marginTop="13dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/board_title"
+        />
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_notice"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/notice_item"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/board_title"
+        />
 
     <Button
         android:id="@+id/btn_noticewrite"
@@ -18,7 +36,7 @@
         android:text="글쓰기"
         android:textColor="@color/black"
         android:backgroundTint="@color/powderblue"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rv_notice"
         android:layout_marginBottom="20dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"/>

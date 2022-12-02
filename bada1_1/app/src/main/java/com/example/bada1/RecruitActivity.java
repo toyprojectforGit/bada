@@ -8,6 +8,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+import com.example.bada1.activity.HomeActivity;
+import com.example.bada1.modelClass.RecruitNotice;
+
 public class RecruitActivity extends AppCompatActivity {
 
     EditText et_serv;

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/homeFragment2"
+        android:enabled="true"
+        android:title="홈"
+        android:icon="@drawable/ic_baseline_supervised_user_circle_24"
+        />
+    <item
+        android:id="@+id/projectFragment"
+        android:title="프로젝트"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_space_dashboard_24"
+
+        />
+
+    <item
+        android:id="@+id/BoardFragment"
+        android:title="게시판"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_feed_24"/>
+</menu>
