@@ -22,7 +22,7 @@ public class RecruitActivity extends AppCompatActivity {
     EditText et_setloca;
 
     Button post;
-    RecruitNotice RN;
+    RecruitNotice RN=new RecruitNotice();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

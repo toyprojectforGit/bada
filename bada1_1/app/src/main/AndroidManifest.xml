@@ -17,6 +17,9 @@
             android:name=".activity.NoticeWrite"
             android:exported="false" />
         <activity
+            android:name=".RecruitActivity"
+            android:exported="false" />
+        <activity
             android:name=".activity.NoticeBoardActivity"
             android:exported="false" />
         <activity
