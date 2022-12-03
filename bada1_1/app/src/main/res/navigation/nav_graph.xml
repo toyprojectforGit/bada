@@ -14,4 +14,8 @@
         android:id="@+id/projectFragment"
         android:name="com.example.bada1.fragment.ProjectFragment"
         android:label="ProjectFragment" />
+    <fragment
+        android:id="@+id/roleSelectFragment"
+        android:name="com.example.bada1.fragment.RoleSelectFragment"
+        android:label="RoleSelectFragment" />
 </navigation>
