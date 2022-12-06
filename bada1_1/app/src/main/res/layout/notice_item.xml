@@ -33,15 +33,19 @@
                     android:text = "프로젝트"
                     android:textStyle="bold"
                     android:textSize="20dp"
-                    android:layout_margin="5dp"/>
-                <ImageButton
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="5dp"/>
+
+                <com.airbnb.lottie.LottieAnimationView
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:layout_margin="10dp"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
                     android:id="@+id/notice_recylcer_btn"
-                    android:background="@drawable/ic_baseline_heart_broken_24"
+                    app:lottie_fileName="heart.json"
+                    app:lottie_autoPlay="false"
+                    app:lottie_loop="false"
+                    
                     />
             </androidx.constraintlayout.widget.ConstraintLayout>
 

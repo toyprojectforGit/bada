@@ -1,5 +1,6 @@
 package com.example.bada1
 
+import android.animation.ValueAnimator
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -57,7 +58,13 @@ class DataViewHolder( itemView:View) : RecyclerView.ViewHolder(itemView), View.O
                 heartUsers= it
                 it.forEach {
                     if (UserPrivateData.USERID == it){noheart= true
-                        heartbtn.setBackgroundResource(R.drawable.ic_baseline_heart_full)
+                        heartbtn.progress=0.5f
+//                        val animator= ValueAnimator.ofFloat(0f,0.5f).setDuration(300)
+//                        animator.addUpdateListener {
+//                            heartbtn.progress =it.getAnimatedValue() as Float
+//                        }
+//                        animator.start()
+                            //heartbtn.setBackgroundResource(R.drawable.ic_baseline_heart_full)
                     }
                 }
             }
@@ -77,7 +84,7 @@ class DataViewHolder( itemView:View) : RecyclerView.ViewHolder(itemView), View.O
         when(p0){
             heartbtn ->{
                 //하트가 되어있으면 데이터베이스 배열에 사용자 이메일 추가
-                if (noheart==false){ heartbtn.setBackgroundResource(R.drawable.ic_baseline_heart_full)
+                if (noheart==false){// heartbtn.setBackgroundResource(R.drawable.ic_baseline_heart_full)
                     noheart=true
                     val db = noticedatabase.child("${title.text}")
                     heartUsers.add(UserPrivateData.USERID)
@@ -85,15 +92,28 @@ class DataViewHolder( itemView:View) : RecyclerView.ViewHolder(itemView), View.O
                     update.put("heartUsers",heartUsers)
 
                     db.updateChildren(update as Map<String, Any>)
+
+
+                    val animator= ValueAnimator.ofFloat(0f,0.5f).setDuration(500)
+                        animator.addUpdateListener {
+                            heartbtn.progress =it.getAnimatedValue() as Float
+                        }
+                        animator.start()
+
                 }else{
                     //하트취소하면 데이터베이스 배열에 사용자 이메일 제거
-                    heartbtn.setBackgroundResource(R.drawable.ic_baseline_heart_broken_24)
+                  //  heartbtn.setBackgroundResource(R.drawable.ic_baseline_heart_broken_24)
                     val db = noticedatabase.child("${title.text}")
                     val update = hashMapOf<String,ArrayList<String>?>()
                     heartUsers.remove(UserPrivateData.USERID)
                     update.put("heartUsers",heartUsers)
                     db.updateChildren(update as Map<String, Any>)
                     noheart=false
+                    val animator= ValueAnimator.ofFloat(0.5f,1f).setDuration(500)
+                    animator.addUpdateListener {
+                        heartbtn.progress =it.getAnimatedValue() as Float
+                    }
+                    animator.start()
                 }
             }
         }
