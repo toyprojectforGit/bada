@@ -1,6 +1,8 @@
 package com.example.bada1.activity;
 
 
+import static com.example.bada1.util.UserPrivateData.USERTOKEN;
+
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -65,6 +67,7 @@ public class LoginActivity extends AppCompatActivity {
     }
     private void signIn(String email, String password) {
         // [START sign_in_with_email]
+
         mAuth.signInWithEmailAndPassword(email, password)
                 .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
                     @Override
@@ -72,10 +75,11 @@ public class LoginActivity extends AppCompatActivity {
                         if (task.isSuccessful()) {
                             // Sign in success, update UI with the signed-in user's information
                             FirebaseUser user = mAuth.getCurrentUser();
+                            Log.d("로그",mAuth.getUid());
+                            USERTOKEN = mAuth.getUid();
                             Log.d("로그","email -> 성공email");
                             Toast.makeText(LoginActivity.this, "로그인 성공",
                                     Toast.LENGTH_SHORT).show();
-
                             UserPrivateData.USERID = email;
                             Intent d = new Intent(getApplicationContext(), MainActivity.class);
                             startActivity(d);
