@@ -16,6 +16,8 @@ import com.example.bada1.modelClass.User;
 
 import java.util.ArrayList;
 
+import de.hdodenhof.circleimageview.CircleImageView;
+
 public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.CustomViewHolder> {
 
     private ArrayList<User> arrayList;
@@ -39,7 +41,7 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.CustomView
     @Override
     public void onBindViewHolder(@NonNull CustomViewHolder holder, int position) {
         if (arrayList.get(position).getProfile() ==null){
-            holder.iv_profile.setBackgroundResource(R.drawable.luny);
+            holder.iv_profile.setBackgroundResource(R.drawable.ic_profile);
         }else{
             Glide.with(holder.itemView)
                     .load(arrayList.get(position).getProfile())
@@ -61,7 +63,7 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.CustomView
     }
 
     public class CustomViewHolder extends RecyclerView.ViewHolder {
-        ImageView iv_profile;
+        CircleImageView iv_profile;
         TextView tv_id;
         TextView tv_location;
         TextView tv_topic;
