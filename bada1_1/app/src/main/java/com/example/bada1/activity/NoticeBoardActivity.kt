@@ -9,11 +9,12 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.bada1.NBAdapter
 import com.example.bada1.databinding.ActivityNoticeBoardBinding
 import com.example.bada1.modelClass.NoticeModel
+import com.example.bada1.recyclerview.INBAdapter
 import com.example.bada1.util.util.TAG
 import com.google.firebase.database.*
 import kotlinx.android.synthetic.main.activity_notice_board.*
 
-class NoticeBoardActivity : AppCompatActivity(),View.OnClickListener {
+class NoticeBoardActivity : AppCompatActivity(),View.OnClickListener, INBAdapter {
     private lateinit var mbinding:ActivityNoticeBoardBinding
     private lateinit var mDatabaseRef: DatabaseReference
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -26,7 +27,7 @@ class NoticeBoardActivity : AppCompatActivity(),View.OnClickListener {
         mbinding.btnNoticewrite.setOnClickListener(this)
 
         val datalist = ArrayList<NoticeModel>()
-        val dataNB = NBAdapter()  //리사이클러뷰 사용시 필요, 어댑터 생성
+        val dataNB = NBAdapter(this)  //리사이클러뷰 사용시 필요, 어댑터 생성
         val databaseReference=FirebaseDatabase.getInstance().getReference("teambada").child("notice")
         databaseReference.addListenerForSingleValueEvent(object :ValueEventListener{
             override fun onDataChange(snapshot: DataSnapshot) {
@@ -67,5 +68,12 @@ class NoticeBoardActivity : AppCompatActivity(),View.OnClickListener {
                 startActivity(intent)
             }
         }
+    }
+
+    override fun onSearchItemClicked(position: Int, context: String) {
+        Log.d(TAG,"position -> $position context : $context")
+        val intent= Intent(this,NoticeDetailActivity::class.java)
+        intent.putExtra("title",context)
+        startActivity(intent)
     }
 }
