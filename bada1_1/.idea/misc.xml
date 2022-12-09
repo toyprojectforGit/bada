@@ -3,14 +3,17 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/dlrkd/AndroidStudioProjects/bada1_1/app/src/main/res/drawable/edit_box.xml" value="0.2305" />
         <entry key="..\:/Users/dlrkd/AndroidStudioProjects/bada1_1/app/src/main/res/drawable/ic_baseline_favorite_24.xml" value="0.2265" />
         <entry key="..\:/Users/dlrkd/AndroidStudioProjects/bada1_1/app/src/main/res/drawable/ic_baseline_heart_broken_24.xml" value="0.2945" />
         <entry key="..\:/Users/dlrkd/AndroidStudioProjects/bada1_1/app/src/main/res/drawable/ic_baseline_heart_full.xml" value="0.2945" />
         <entry key="..\:/Users/dlrkd/AndroidStudioProjects/bada1_1/app/src/main/res/drawable/ic_livechat.xml" value="0.22" />
         <entry key="..\:/Users/dlrkd/AndroidStudioProjects/bada1_1/app/src/main/res/drawable/ic_profile.xml" value="0.2305" />
         <entry key="..\:/Users/dlrkd/AndroidStudioProjects/bada1_1/app/src/main/res/drawable/icon_arrow_left.xml" value="0.14666666666666667" />
+        <entry key="..\:/Users/dlrkd/AndroidStudioProjects/bada1_1/app/src/main/res/drawable/map_btn.xml" value="0.2305" />
         <entry key="..\:/Users/dlrkd/AndroidStudioProjects/bada1_1/app/src/main/res/drawable/round_blue.xml" value="0.2265" />
         <entry key="..\:/Users/dlrkd/AndroidStudioProjects/bada1_1/app/src/main/res/drawable/round_layout_gray.xml" value="0.196" />
+        <entry key="..\:/Users/dlrkd/AndroidStudioProjects/bada1_1/app/src/main/res/drawable/round_layout_stroke_gray.xml" value="0.2255" />
         <entry key="..\:/Users/dlrkd/AndroidStudioProjects/bada1_1/app/src/main/res/drawable/round_violet.xml" value="0.2255" />
         <entry key="..\:/Users/dlrkd/AndroidStudioProjects/bada1_1/app/src/main/res/layout/activity_login.xml" value="0.22447916666666667" />
         <entry key="..\:/Users/dlrkd/AndroidStudioProjects/bada1_1/app/src/main/res/layout/activity_main.xml" value="0.17916666666666667" />
