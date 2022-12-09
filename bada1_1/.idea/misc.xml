@@ -3,9 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/dlrkd/AndroidStudioProjects/bada1_1/app/src/main/res/drawable/ic_baseline_favorite_24.xml" value="0.2265" />
         <entry key="..\:/Users/dlrkd/AndroidStudioProjects/bada1_1/app/src/main/res/drawable/ic_baseline_heart_broken_24.xml" value="0.2945" />
         <entry key="..\:/Users/dlrkd/AndroidStudioProjects/bada1_1/app/src/main/res/drawable/ic_baseline_heart_full.xml" value="0.2945" />
+        <entry key="..\:/Users/dlrkd/AndroidStudioProjects/bada1_1/app/src/main/res/drawable/ic_livechat.xml" value="0.22" />
         <entry key="..\:/Users/dlrkd/AndroidStudioProjects/bada1_1/app/src/main/res/drawable/ic_profile.xml" value="0.2305" />
+        <entry key="..\:/Users/dlrkd/AndroidStudioProjects/bada1_1/app/src/main/res/drawable/icon_arrow_left.xml" value="0.14666666666666667" />
         <entry key="..\:/Users/dlrkd/AndroidStudioProjects/bada1_1/app/src/main/res/drawable/round_blue.xml" value="0.2265" />
         <entry key="..\:/Users/dlrkd/AndroidStudioProjects/bada1_1/app/src/main/res/drawable/round_layout_gray.xml" value="0.196" />
         <entry key="..\:/Users/dlrkd/AndroidStudioProjects/bada1_1/app/src/main/res/drawable/round_violet.xml" value="0.2255" />
@@ -14,6 +17,7 @@
         <entry key="..\:/Users/dlrkd/AndroidStudioProjects/bada1_1/app/src/main/res/layout/activity_map.xml" value="0.22447916666666667" />
         <entry key="..\:/Users/dlrkd/AndroidStudioProjects/bada1_1/app/src/main/res/layout/activity_matching.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/dlrkd/AndroidStudioProjects/bada1_1/app/src/main/res/layout/activity_notice_board.xml" value="0.22447916666666667" />
+        <entry key="..\:/Users/dlrkd/AndroidStudioProjects/bada1_1/app/src/main/res/layout/activity_notice_detail.xml" value="0.21979166666666666" />
         <entry key="..\:/Users/dlrkd/AndroidStudioProjects/bada1_1/app/src/main/res/layout/activity_notice_write.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/dlrkd/AndroidStudioProjects/bada1_1/app/src/main/res/layout/activity_project_activty.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/dlrkd/AndroidStudioProjects/bada1_1/app/src/main/res/layout/activity_recruit.xml" value="0.36666666666666664" />
@@ -24,6 +28,7 @@
         <entry key="..\:/Users/dlrkd/AndroidStudioProjects/bada1_1/app/src/main/res/layout/fragment_project.xml" value="0.19655797101449277" />
         <entry key="..\:/Users/dlrkd/AndroidStudioProjects/bada1_1/app/src/main/res/layout/fragment_role_select.xml" value="0.17916666666666667" />
         <entry key="..\:/Users/dlrkd/AndroidStudioProjects/bada1_1/app/src/main/res/layout/home.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/dlrkd/AndroidStudioProjects/bada1_1/app/src/main/res/layout/item_chat.xml" value="0.21875" />
         <entry key="..\:/Users/dlrkd/AndroidStudioProjects/bada1_1/app/src/main/res/layout/list_item.xml" value="0.21979166666666666" />
         <entry key="..\:/Users/dlrkd/AndroidStudioProjects/bada1_1/app/src/main/res/layout/notice_item.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/dlrkd/AndroidStudioProjects/bada1_1/app/src/main/res/layout/notice_list_item.xml" value="0.36666666666666664" />
