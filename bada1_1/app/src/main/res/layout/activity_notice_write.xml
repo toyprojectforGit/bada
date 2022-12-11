@@ -9,7 +9,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toTopOf="parent"
-        android:text="프로젝트 목록"
+        android:text="프로젝트 게시하기"
         android:layout_marginTop="13dp"
         android:textSize="16sp"
         android:textStyle="bold"
@@ -18,25 +18,33 @@
         app:layout_constraintStart_toStartOf="parent"
         android:id="@+id/write_title"
         />
+
     <EditText
         android:id="@+id/nt_title"
         android:hint="프로젝트명을 입력하세요"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="@drawable/edit_box"
+        android:layout_marginRight="20dp"
+        android:layout_height="40dp"
         app:layout_constraintTop_toBottomOf="@+id/write_title"
         android:layout_marginTop="20dp"
+        android:paddingStart="10dp"
         app:layout_constraintLeft_toLeftOf="parent"
         android:layout_marginLeft="20dp"/>
 
     <EditText
         android:id="@+id/nt_contents"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="56dp"
+        android:layout_marginTop="20dp"
         android:ems="17"
         android:hint="프로젝트 세부내용 :"
         android:lines="10"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/edit_box"
         android:gravity="top|left"
+        android:padding="10dp"
         android:inputType="textMultiLine"
         app:layout_constraintStart_toStartOf="@+id/nt_title"
         app:layout_constraintTop_toBottomOf="@+id/nt_title" />
@@ -46,58 +54,102 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@+id/nt_contents"
-        android:text="원하는 인원 수를 입력하시오(최대 4명)"
+        android:text="원하는 인원 수를 입력하세요.(최대 4명)"
         android:layout_marginTop="20dp"
+        android:textColor="@color/black"
         app:layout_constraintLeft_toLeftOf="parent"
         android:layout_marginLeft="20dp"
         android:textSize="20sp"/>
-
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/txt_choose"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="백엔드 개발자:"
+        android:id="@+id/sv_title"
+        />
     <EditText
         android:id="@+id/sv_people"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="6dp"
         android:hint="서버"
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginLeft="20dp"
-        app:layout_constraintTop_toBottomOf="@id/txt_choose"/>
 
+        app:layout_constraintStart_toEndOf="@+id/sv_title"
+        android:layout_marginLeft="5dp"
+        app:layout_constraintTop_toBottomOf="@id/txt_choose"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/txt_choose"
+        app:layout_constraintStart_toEndOf="@+id/sv_people"
+        android:id="@+id/aos_title"
+        android:text="안드로이드:"
+        />
     <EditText
         android:id="@+id/an_people"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="안드로이드"
+        android:hint="AOS"
         app:layout_constraintTop_toBottomOf="@id/txt_choose"
-        app:layout_constraintLeft_toRightOf="@+id/sv_people"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="10dp"/>
+        app:layout_constraintLeft_toRightOf="@+id/aos_title"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="6dp"/>
 
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/an_people"
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/ios_title"
+        android:text="ios 개발자:"
+        />
     <EditText
         android:id="@+id/ios_people"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hint="iOS"
-        app:layout_constraintTop_toBottomOf="@id/txt_choose"
-        app:layout_constraintLeft_toRightOf="@+id/an_people"
+        app:layout_constraintTop_toBottomOf="@+id/an_people"
+        app:layout_constraintLeft_toRightOf="@+id/ios_title"
+        android:layout_marginLeft="27dp"
+        android:layout_marginTop="6dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
         android:layout_marginLeft="20dp"
-        android:layout_marginTop="10dp"/>
-
+        app:layout_constraintTop_toBottomOf="@+id/an_people"
+        app:layout_constraintStart_toEndOf="@+id/ios_people"
+        android:id="@+id/des_title"
+        android:text="디자이너:"
+        />
     <EditText
         android:id="@+id/des_people"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hint="디자이너"
-        app:layout_constraintTop_toBottomOf="@id/txt_choose"
-        app:layout_constraintLeft_toRightOf="@+id/ios_people"
+        app:layout_constraintTop_toBottomOf="@+id/an_people"
+        app:layout_constraintStart_toEndOf="@+id/des_title"
         android:layout_marginLeft="20dp"
-        android:layout_marginTop="10dp"/>
+        android:layout_marginTop="5dp"/>
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btn_save"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
-        android:text="저장하기"
+        android:text="게시하기"
+        android:textColor="@color/white"
+        android:background="@drawable/round_blue"
         android:backgroundTint="@color/powderblue"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

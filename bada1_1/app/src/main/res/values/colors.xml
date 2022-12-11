@@ -10,4 +10,7 @@
     <color name="blue">#0000FF</color>
     <color name="powderblue">#FFB0E0E6</color>
     <color name="gray">#EEEEEEEE</color>
+    <color name="LineColorFat">#DBDBDB</color>
+    <color name="background_white">#FFFFFFFF</color>
+
 </resources>
