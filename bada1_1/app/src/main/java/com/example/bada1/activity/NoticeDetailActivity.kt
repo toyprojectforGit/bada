@@ -38,7 +38,11 @@ class NoticeDetailActivity : AppCompatActivity(),View.OnClickListener {
                 mbinding.detailContent.text = tmpdata?.contents
                 mbinding.detailTitle.text = tmpdata?.title
                 mbinding.detailEmail.text = tmpdata?.useremail
-                mbinding.detailLikeText.text="${tmpdata?.heartUsers?.count()}"
+                tmpdata?.heartUsers?.let {
+                        if (it.isEmpty()){mbinding.detailLikeText.text="0"}
+                    else mbinding.detailLikeText.text="${tmpdata?.heartUsers?.count()}"
+                    }
+                //mbinding.detailLikeText.text="${tmpdata?.heartUsers?.count()}"
                 mbinding.detailServer.text="서버 ${tmpdata?.sv_people}명"
                 mbinding.detailAos.text="AOS ${tmpdata?.an_people}명"
                 mbinding.detailDesign.text = "디자인 ${tmpdata?.des_people}명"
@@ -67,7 +71,7 @@ class NoticeDetailActivity : AppCompatActivity(),View.OnClickListener {
                         tmpdata?.let { chatlist.add(it) }
                     }
                     chatcount = chatlist.count()
-                    mbinding.detailLiveText.text = "${chatcount+1}"
+                    mbinding.detailLiveText.text = "${chatcount}"
                     recyclerviewAdapter.getChatData(chatlist)
                     recyclerviewAdapter.notifyDataSetChanged()
                     Log.d(TAG,"chatlist - > $chatlist")

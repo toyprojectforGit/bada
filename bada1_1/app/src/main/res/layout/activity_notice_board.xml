@@ -29,7 +29,7 @@
         app:layout_constraintTop_toBottomOf="@+id/board_title"
         />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btn_noticewrite"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
